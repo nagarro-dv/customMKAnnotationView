@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0839310D143062B800FD858A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0839310C143062B800FD858A /* UIKit.framework */; };
+		0839310F143062B800FD858A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0839310E143062B800FD858A /* Foundation.framework */; };
+		08393111143062B800FD858A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08393110143062B800FD858A /* CoreGraphics.framework */; };
+		08393117143062B800FD858A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08393115143062B800FD858A /* InfoPlist.strings */; };
+		0839311A143062B800FD858A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08393119143062B800FD858A /* main.m */; };
+		0839311D143062B800FD858A /* customMapAnnotationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0839311C143062B800FD858A /* customMapAnnotationAppDelegate.m */; };
+		08393120143062B800FD858A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0839311E143062B800FD858A /* MainWindow.xib */; };
+		0839312D143062B800FD858A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0839310C143062B800FD858A /* UIKit.framework */; };
+		0839312E143062B800FD858A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0839310E143062B800FD858A /* Foundation.framework */; };
+		0839312F143062B800FD858A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08393110143062B800FD858A /* CoreGraphics.framework */; };
+		08393137143062B800FD858A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08393135143062B800FD858A /* InfoPlist.strings */; };
+		0839313A143062B800FD858A /* customMapAnnotationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 08393139143062B800FD858A /* customMapAnnotationTests.h */; };
+		0839313C143062B800FD858A /* customMapAnnotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0839313B143062B800FD858A /* customMapAnnotationTests.m */; };
+		083931461430632F00FD858A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083931451430632F00FD858A /* MapKit.framework */; };
+		0839314A1430639A00FD858A /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931481430639A00FD858A /* MapView.m */; };
+		0839314B1430639A00FD858A /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083931491430639A00FD858A /* MapView.xib */; };
+		08393162143072DD00FD858A /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08393161143072DD00FD858A /* CustomAnnotation.m */; };
+		083931771430757700FD858A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931661430757700FD858A /* MKAnnotationView+WebCache.m */; };
+		083931781430757700FD858A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931681430757700FD858A /* SDImageCache.m */; };
+		083931791430757700FD858A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0839316C1430757700FD858A /* SDWebImageDownloader.m */; };
+		0839317A1430757700FD858A /* SDWebImageLICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0839316E1430757700FD858A /* SDWebImageLICENSE */; };
+		0839317B1430757700FD858A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931701430757700FD858A /* SDWebImageManager.m */; };
+		0839317C1430757700FD858A /* SDWebImageREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = 083931721430757700FD858A /* SDWebImageREADME.md */; };
+		0839317D1430757700FD858A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931741430757700FD858A /* UIButton+WebCache.m */; };
+		0839317E1430757700FD858A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 083931761430757700FD858A /* UIImageView+WebCache.m */; };
+		08393181143075BC00FD858A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08393180143075BC00FD858A /* MKAnnotationView+WebCache.m */; };
+		08393183143077B500FD858A /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 08393182143077B500FD858A /* loading.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08393130143062B800FD858A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083930FF143062B700FD858A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08393107143062B800FD858A;
+			remoteInfo = customMapAnnotation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08393108143062B800FD858A /* customMKAnnotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customMKAnnotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0839310C143062B800FD858A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0839310E143062B800FD858A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08393110143062B800FD858A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		08393114143062B800FD858A /* customMKAnnotation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "customMKAnnotation-Info.plist"; sourceTree = "<group>"; };
+		08393116143062B800FD858A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08393118143062B800FD858A /* customMKAnnotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "customMKAnnotation-Prefix.pch"; sourceTree = "<group>"; };
+		08393119143062B800FD858A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0839311B143062B800FD858A /* customMapAnnotationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = customMapAnnotationAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0839311C143062B800FD858A /* customMapAnnotationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = customMapAnnotationAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0839311F143062B800FD858A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0839312C143062B800FD858A /* customMKAnnotationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customMKAnnotationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08393134143062B800FD858A /* customMKAnnotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "customMKAnnotationTests-Info.plist"; sourceTree = "<group>"; };
+		08393136143062B800FD858A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08393138143062B800FD858A /* customMKAnnotationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "customMKAnnotationTests-Prefix.pch"; sourceTree = "<group>"; };
+		08393139143062B800FD858A /* customMapAnnotationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = customMapAnnotationTests.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0839313B143062B800FD858A /* customMapAnnotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = customMapAnnotationTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		083931451430632F00FD858A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		083931471430639A00FD858A /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MapView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		083931481430639A00FD858A /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MapView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		083931491430639A00FD858A /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		08393160143072DD00FD858A /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		08393161143072DD00FD858A /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		083931651430757700FD858A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		083931661430757700FD858A /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		083931671430757700FD858A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		083931681430757700FD858A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		083931691430757700FD858A /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		0839316A1430757700FD858A /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		0839316B1430757700FD858A /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		0839316C1430757700FD858A /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0839316D1430757700FD858A /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		0839316E1430757700FD858A /* SDWebImageLICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SDWebImageLICENSE; sourceTree = "<group>"; };
+		0839316F1430757700FD858A /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		083931701430757700FD858A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		083931711430757700FD858A /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		083931721430757700FD858A /* SDWebImageREADME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SDWebImageREADME.md; sourceTree = "<group>"; };
+		083931731430757700FD858A /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		083931741430757700FD858A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		083931751430757700FD858A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		083931761430757700FD858A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		0839317F143075BB00FD858A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		08393180143075BC00FD858A /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		08393182143077B500FD858A /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = Images/loading.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08393105143062B800FD858A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083931461430632F00FD858A /* MapKit.framework in Frameworks */,
+				0839310D143062B800FD858A /* UIKit.framework in Frameworks */,
+				0839310F143062B800FD858A /* Foundation.framework in Frameworks */,
+				08393111143062B800FD858A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08393128143062B800FD858A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0839312D143062B800FD858A /* UIKit.framework in Frameworks */,
+				0839312E143062B800FD858A /* Foundation.framework in Frameworks */,
+				0839312F143062B800FD858A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083930FD143062B700FD858A = {
+			isa = PBXGroup;
+			children = (
+				08393112143062B800FD858A /* customMapAnnotation */,
+				08393132143062B800FD858A /* customMapAnnotationTests */,
+				0839310B143062B800FD858A /* Frameworks */,
+				08393109143062B800FD858A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08393109143062B800FD858A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08393108143062B800FD858A /* customMKAnnotation.app */,
+				0839312C143062B800FD858A /* customMKAnnotationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0839310B143062B800FD858A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083931451430632F00FD858A /* MapKit.framework */,
+				0839310C143062B800FD858A /* UIKit.framework */,
+				0839310E143062B800FD858A /* Foundation.framework */,
+				08393110143062B800FD858A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08393112143062B800FD858A /* customMapAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				08393113143062B800FD858A /* Supporting Files */,
+				083931631430757700FD858A /* ext */,
+				0839311B143062B800FD858A /* customMapAnnotationAppDelegate.h */,
+				0839311C143062B800FD858A /* customMapAnnotationAppDelegate.m */,
+				0839311E143062B800FD858A /* MainWindow.xib */,
+				083931471430639A00FD858A /* MapView.h */,
+				083931481430639A00FD858A /* MapView.m */,
+				083931491430639A00FD858A /* MapView.xib */,
+				08393160143072DD00FD858A /* CustomAnnotation.h */,
+				08393161143072DD00FD858A /* CustomAnnotation.m */,
+				0839317F143075BB00FD858A /* MKAnnotationView+WebCache.h */,
+				08393180143075BC00FD858A /* MKAnnotationView+WebCache.m */,
+				08393182143077B500FD858A /* loading.png */,
+			);
+			path = customMapAnnotation;
+			sourceTree = "<group>";
+		};
+		08393113143062B800FD858A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08393114143062B800FD858A /* customMKAnnotation-Info.plist */,
+				08393115143062B800FD858A /* InfoPlist.strings */,
+				08393118143062B800FD858A /* customMKAnnotation-Prefix.pch */,
+				08393119143062B800FD858A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08393132143062B800FD858A /* customMapAnnotationTests */ = {
+			isa = PBXGroup;
+			children = (
+				08393139143062B800FD858A /* customMapAnnotationTests.h */,
+				0839313B143062B800FD858A /* customMapAnnotationTests.m */,
+				08393133143062B800FD858A /* Supporting Files */,
+			);
+			path = customMapAnnotationTests;
+			sourceTree = "<group>";
+		};
+		08393133143062B800FD858A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08393134143062B800FD858A /* customMKAnnotationTests-Info.plist */,
+				08393135143062B800FD858A /* InfoPlist.strings */,
+				08393138143062B800FD858A /* customMKAnnotationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		083931631430757700FD858A /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				083931641430757700FD858A /* SDWebImage */,
+			);
+			path = ext;
+			sourceTree = SOURCE_ROOT;
+		};
+		083931641430757700FD858A /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				083931651430757700FD858A /* MKAnnotationView+WebCache.h */,
+				083931661430757700FD858A /* MKAnnotationView+WebCache.m */,
+				083931671430757700FD858A /* SDImageCache.h */,
+				083931681430757700FD858A /* SDImageCache.m */,
+				083931691430757700FD858A /* SDImageCacheDelegate.h */,
+				0839316A1430757700FD858A /* SDWebImageCompat.h */,
+				0839316B1430757700FD858A /* SDWebImageDownloader.h */,
+				0839316C1430757700FD858A /* SDWebImageDownloader.m */,
+				0839316D1430757700FD858A /* SDWebImageDownloaderDelegate.h */,
+				0839316E1430757700FD858A /* SDWebImageLICENSE */,
+				0839316F1430757700FD858A /* SDWebImageManager.h */,
+				083931701430757700FD858A /* SDWebImageManager.m */,
+				083931711430757700FD858A /* SDWebImageManagerDelegate.h */,
+				083931721430757700FD858A /* SDWebImageREADME.md */,
+				083931731430757700FD858A /* UIButton+WebCache.h */,
+				083931741430757700FD858A /* UIButton+WebCache.m */,
+				083931751430757700FD858A /* UIImageView+WebCache.h */,
+				083931761430757700FD858A /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08393107143062B800FD858A /* customMKAnnotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0839313F143062B800FD858A /* Build configuration list for PBXNativeTarget "customMKAnnotation" */;
+			buildPhases = (
+				08393104143062B800FD858A /* Sources */,
+				08393105143062B800FD858A /* Frameworks */,
+				08393106143062B800FD858A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = customMKAnnotation;
+			productName = customMapAnnotation;
+			productReference = 08393108143062B800FD858A /* customMKAnnotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0839312B143062B800FD858A /* customMKAnnotationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08393142143062B800FD858A /* Build configuration list for PBXNativeTarget "customMKAnnotationTests" */;
+			buildPhases = (
+				08393127143062B800FD858A /* Sources */,
+				08393128143062B800FD858A /* Frameworks */,
+				08393129143062B800FD858A /* Resources */,
+				0839312A143062B800FD858A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08393131143062B800FD858A /* PBXTargetDependency */,
+			);
+			name = customMKAnnotationTests;
+			productName = customMapAnnotationTests;
+			productReference = 0839312C143062B800FD858A /* customMKAnnotationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		083930FF143062B700FD858A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Fluntro;
+			};
+			buildConfigurationList = 08393102143062B700FD858A /* Build configuration list for PBXProject "customMKAnnotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 083930FD143062B700FD858A;
+			productRefGroup = 08393109143062B800FD858A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08393107143062B800FD858A /* customMKAnnotation */,
+				0839312B143062B800FD858A /* customMKAnnotationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08393106143062B800FD858A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08393117143062B800FD858A /* InfoPlist.strings in Resources */,
+				08393120143062B800FD858A /* MainWindow.xib in Resources */,
+				0839314B1430639A00FD858A /* MapView.xib in Resources */,
+				0839317A1430757700FD858A /* SDWebImageLICENSE in Resources */,
+				0839317C1430757700FD858A /* SDWebImageREADME.md in Resources */,
+				08393183143077B500FD858A /* loading.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08393129143062B800FD858A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08393137143062B800FD858A /* InfoPlist.strings in Resources */,
+				0839313A143062B800FD858A /* customMapAnnotationTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0839312A143062B800FD858A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08393104143062B800FD858A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0839311A143062B800FD858A /* main.m in Sources */,
+				0839311D143062B800FD858A /* customMapAnnotationAppDelegate.m in Sources */,
+				0839314A1430639A00FD858A /* MapView.m in Sources */,
+				08393162143072DD00FD858A /* CustomAnnotation.m in Sources */,
+				083931771430757700FD858A /* MKAnnotationView+WebCache.m in Sources */,
+				083931781430757700FD858A /* SDImageCache.m in Sources */,
+				083931791430757700FD858A /* SDWebImageDownloader.m in Sources */,
+				0839317B1430757700FD858A /* SDWebImageManager.m in Sources */,
+				0839317D1430757700FD858A /* UIButton+WebCache.m in Sources */,
+				0839317E1430757700FD858A /* UIImageView+WebCache.m in Sources */,
+				08393181143075BC00FD858A /* MKAnnotationView+WebCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08393127143062B800FD858A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0839313C143062B800FD858A /* customMapAnnotationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08393131143062B800FD858A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08393107143062B800FD858A /* customMKAnnotation */;
+			targetProxy = 08393130143062B800FD858A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08393115143062B800FD858A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08393116143062B800FD858A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0839311E143062B800FD858A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0839311F143062B800FD858A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		08393135143062B800FD858A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08393136143062B800FD858A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0839313D143062B800FD858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0839313E143062B800FD858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		08393140143062B800FD858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "customMapAnnotation/customMKAnnotation-Prefix.pch";
+				INFOPLIST_FILE = "customMapAnnotation/customMKAnnotation-Info.plist";
+				PRODUCT_NAME = customMKAnnotation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08393141143062B800FD858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "customMapAnnotation/customMKAnnotation-Prefix.pch";
+				INFOPLIST_FILE = "customMapAnnotation/customMKAnnotation-Info.plist";
+				PRODUCT_NAME = customMKAnnotation;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		08393143143062B800FD858A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/customMapAnnotation.app/customMapAnnotation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "customMapAnnotationTests/customMKAnnotationTests-Prefix.pch";
+				INFOPLIST_FILE = "customMapAnnotationTests/customMKAnnotationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = customMKAnnotationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		08393144143062B800FD858A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/customMapAnnotation.app/customMapAnnotation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "customMapAnnotationTests/customMKAnnotationTests-Prefix.pch";
+				INFOPLIST_FILE = "customMapAnnotationTests/customMKAnnotationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = customMKAnnotationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08393102143062B700FD858A /* Build configuration list for PBXProject "customMKAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0839313D143062B800FD858A /* Debug */,
+				0839313E143062B800FD858A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0839313F143062B800FD858A /* Build configuration list for PBXNativeTarget "customMKAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08393140143062B800FD858A /* Debug */,
+				08393141143062B800FD858A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08393142143062B800FD858A /* Build configuration list for PBXNativeTarget "customMKAnnotationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08393143143062B800FD858A /* Debug */,
+				08393144143062B800FD858A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 083930FF143062B700FD858A /* Project object */;
+}
