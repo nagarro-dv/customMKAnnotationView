@@ -12,6 +12,7 @@
 @implementation MapView
 @synthesize mapview;
 @synthesize mapAnnotations;
+@synthesize infoArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -19,11 +20,49 @@
     if (self) {
         // Custom initialization
     }
+    
+    double lat = 40.33168900;
+    double lng = -110.03073100;
+    
+    infoArray = [[NSMutableArray alloc] initWithCapacity:0];
+    for (int i = 0; i < 20; i++) 
+    {
+        NSString *imageURLString = @"";
+        if (i%2==0) {
+            imageURLString = @"http://www.mokriya.com/images/tree_people_150px.png";
+        } else {
+            imageURLString = @"http://www.mokriya.com/images/mokriyalogo_sm.png";
+        }
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:imageURLString,@"image_url", nil];
+        
+        [infoArray addObject:dict];
+        [dict release];
+    }
+
+    
+    
+    mapAnnotations = [[NSMutableArray alloc] initWithCapacity:0];
+    for (int i = 0; i < [infoArray count]; i++)
+    {    
+        
+        
+        CustomAnnotation *annotation = [[CustomAnnotation alloc] initWithLatitude:lat longitude:lng];
+        annotation.tag = i;
+        [self.mapAnnotations addObject:annotation];
+        [annotation release];
+        lat += 0.5;
+        lng += 0.5;
+    }
+     
+
+    
+    
     return self;
 }
 
 - (void)dealloc
 {
+    [infoArray release];
     [mapview release];
     [mapAnnotations release];
     [super dealloc];
@@ -44,31 +83,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    double lat = 40.33168900;
-    double lng = -110.03073100;
-    
-	    
-    mapAnnotations = [[NSMutableArray alloc] initWithCapacity:0];
-    for (int i = 0; i < 20; i++) 
-    {    
-        
-        
-        CustomAnnotation *annotation = [[CustomAnnotation alloc] initWithLatitude:lat longitude:lng];
-        annotation.tag = i;
-        [self.mapAnnotations addObject:annotation];
-        [annotation release];
-        lat += 0.5;
-        lng += 0.5;
-    }
     [self.mapview addAnnotations:self.mapAnnotations];
-    
     MKCoordinateRegion newRegion;
     newRegion.center.latitude = 50.000000;
     newRegion.center.longitude = -100.00000;
     
     newRegion.span.latitudeDelta = 5.000;
     newRegion.span.longitudeDelta = 5.000;
-    
     [self.mapview setRegion:newRegion animated:YES];
     
 }
@@ -88,7 +109,8 @@
     pinView.draggable = NO;
     pinView.annotation = anno;
     
-    NSURL *ImageURL = [NSURL URLWithString:IMAGE_URL_STRING];
+    NSMutableDictionary *dict  = [self.infoArray objectAtIndex:anno.tag];
+    NSURL *ImageURL = [NSURL URLWithString:[dict valueForKey:@"image_url"]];
     [pinView setImageWithURL:ImageURL placeholderImage:[UIImage imageNamed:@"loading.png"]];
     
     

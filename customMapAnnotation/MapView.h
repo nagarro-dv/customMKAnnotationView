@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "MapKit/MapKit.h"
 #import "CustomAnnotation.h"
-#define IMAGE_URL_STRING @"http://www.mokriya.com/images/m6.png"
+#define IMAGE_URL_STRING @"http://www.mokriya.com/images/mokriyalogo_sm.png"
 
 @interface MapView : UIViewController <MKMapViewDelegate>{    
 }
 @property (nonatomic,retain) IBOutlet MKMapView *mapview;
-@property (nonatomic,retain)NSMutableArray *mapAnnotations;
+@property (nonatomic,retain) NSMutableArray *mapAnnotations;
+
+@property (nonatomic,retain) NSMutableArray *infoArray;
 
 @end
